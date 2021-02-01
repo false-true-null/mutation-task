@@ -1,30 +1,27 @@
 module.exports = {
-    "env": {
-        "browser": true,
-        "es6": true,
-        "node": true
+  env: {
+    node: true,
+    es2021: true,
+    jest: true,
+  },
+  extends: [
+    "airbnb-typescript/base",
+    "prettier"
+  ],
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+       project: './tsconfig.json',
+  },
+  plugins: [
+    '@typescript-eslint',
+    'prettier',
+  ],
+  rules: { 'import/extensions': ['off'] },
+  settings: {
+    'import/resolver': {
+      node: {
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+      },
     },
-    "extends": "eslint:recommended",
-    "parserOptions": {
-        "sourceType": "module"
-    },
-    "rules": {
-        "no-console": "off",
-        "indent": [
-            "error",
-            "tab"
-        ],
-        "linebreak-style": [
-            "error",
-            "unix"
-        ],
-        "quotes": [
-            "error",
-            "single"
-        ],
-        "semi": [
-            "error",
-            "always"
-        ]
-    }
+  },
 };
