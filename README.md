@@ -15,7 +15,10 @@ Express / [Nodejs Starter](https://appseed.us/boilerplate-code/nodejs-starter) w
 ## Usage
 
 Install dependencies.
-Run 'npm start'
+Run `npm start`
+
+Example request:
+```
 curl --request POST \
   --url http://localhost:3000/api/statementgen/mutations \
   --header 'Content-Type: application/json' \
@@ -23,5 +26,6 @@ curl --request POST \
 	"document": {"_id":1,"name":"Johnny Content Creator","posts":[{"_id":2,"value":"one","mentions":[]},{"_id":3,"value":"two","mentions":[{"_id":5,"text":"apple"},{"_id":6,"text":"orange"}]},{"_id":4,"value":"three","mentions":[]}]},
 	"mutation": { "posts": [{ "_id": 2, "value": "too" }] }
 }'
+```
 
-Test can be launched with `npm test`
+Tests can be launched with `npm test`
