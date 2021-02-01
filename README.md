@@ -14,7 +14,7 @@ Express / [Nodejs Starter](https://appseed.us/boilerplate-code/nodejs-starter) w
 
 ## Usage
 
-Install dependencies.
+Install dependencies with npm.
 Run `npm start`
 
 Example request:
